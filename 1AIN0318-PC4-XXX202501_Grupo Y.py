@@ -9,7 +9,7 @@ from openpyxl.drawing.image import Image as Excellmage
 # ======== CLASES ========
 
 class Equipo:
-    def__init__(self, codigo, nombre, tipo, supervisor, fecha, estado):
+    def __init__(self, codigo, nombre, tipo, supervisor, fecha, estado):
         self.codigo = codigo
         self.nombre = nombre
         self.tipo = tipo
@@ -21,7 +21,7 @@ class Equipo:
         return {
             'codigo': self.codigo,
             'Nombre': sel.nombre,
-            'Tipo'Ti': selelftipo,
+            'Tipo': selelftipo,
             'Supervisor': sellfupervisor,
             'FechaAdquisición': self.fecha,
             'Estado': self.estado
@@ -55,12 +55,12 @@ class AnalizadorOperacion:
             self.df = pd.DataFrame( columns) 
     
     def filtrar(self, codigo_equipo, fecha_ini, fecha_fin):
-        mask = (''
+        mask = (
             (self.df['Codig'Equipo"] == codigo_equipo)&
             (self.df['Fecha'] >= pd.to_datatime(fecha_ini)) &   
-                return self.df[mask]
+                return self.df[mask] 
+                )
     
 
     def
 
-    
